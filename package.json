@@ -1,7 +1,7 @@
 {
-  "functions": {
-    "api/*.js": {
-      "runtime": "nodejs18.x"
-    }
+  "name": "esp32-leds",
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "^6.0.0"
   }
 }
