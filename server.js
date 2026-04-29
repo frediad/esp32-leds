@@ -4,6 +4,7 @@ const app = express();
 
 app.use(express.json());
 
+
 // 🔑 TU URI
 const uri = "mongodb+srv://fadame:Dbgroot@cluster0.qirxnhe.mongodb.net/esp32";
 
