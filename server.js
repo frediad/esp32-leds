@@ -35,6 +35,10 @@ app.post("/leds", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Servidor ESP32 funcionando 🚀");
+});
+
 // 🔥 RUTA PARA VER DATOS
 app.get("/leds", async (req, res) => {
   try {
