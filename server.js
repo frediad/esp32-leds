@@ -8,7 +8,10 @@ app.use(express.json());
 // 🔑 TU URI
 const uri = "mongodb+srv://fadame:Dbgroot@cluster0.qirxnhe.mongodb.net/esp32";
 
-const client = new MongoClient(uri);
+const client = new MongoClient(uri, {
+  tls: true,
+  tlsAllowInvalidCertificates: true
+});
 
 // 🔥 RUTA PARA GUARDAR
 app.post("/leds", async (req, res) => {
