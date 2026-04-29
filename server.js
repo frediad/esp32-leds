@@ -6,7 +6,7 @@ app.use(express.json());
 
 
 // 🔑 TU URI
-const uri = "mongodb+srv://fadame:Dbgroot@cluster0.qirxnhe.mongodb.net/esp32";
+const uri = "mongodb+srv://fadame:Dbgroot@cluster0.qirxnhe.mongodb.net/?appName=Cluster0";
 
 const client = new MongoClient(uri, {
   tls: true,
